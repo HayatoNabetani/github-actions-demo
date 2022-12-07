@@ -16,7 +16,7 @@ jobs:
           username: ${{secrets.SSH_USERNAME}}
           port: ${{secrets.SSH_PORT}}
           script: |
-            cd src/django-auto-deploy
+            cd src/github-actions-demo
             git pull origin main
             source venv/bin/activate
             pip install -r requirements.txt
